@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Arrays</h2>
+<p id="demo"></p>
+<script>
+let cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;     //cars[0]
+</script>
+
+<h2>JavaScript Arrays</h2>
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+<p id="demoh"></p>
+<script>
+let carsh = ["Saab", "Volvo", "BMW"];
+carsh[0] = "Opel";
+carsh[carsh.length]="oooo";
+document.getElementById("demoh").innerHTML = carsh;
+for(i=0;i<carsh.length;i++)
+document.write("<br>"+carsh[i]);
+</script>
+<h2>JavaScript Arrays</h2>
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+<p id="demo"></p>
+<script>
+let carso = ["Saab", "Volvo", "BMW"];
+document.write("<table border=1>")
+for(i=0;i<carso.length;i++)
+document.write("<tr><td>"+i+"</td><td>"+ carso[i]+"</td></tr>");
+document.write("</table>")
+</script>
+<h2>JavaScript Arrays</h2>
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+<p id="demo"></p>
+<script>
+let g = [10, 15, 20];
+let sum=0;
+for(i=0;i<g.length;i++)
+{
+sum=sum+g[i];
+document.write("<br>Total sum="+sum);
+}
+document.write("<br>Total sum all="+sum);
+</script>
+<h2>JavaScript Arrays</h2>
+<p id="demo"></p>
+<script>
+let arr1 =["welcome","abc","d","f"];  
+arr1.sort();
+for(i=0;i<arr1.length;i++)
+document.write(arr1[i]+"<br>")
+</script>
+<h2>JavaScript Arrays</h2>
+<p id="demo"></p>
+<script>
+let arr =[3,76,0,8,12,83,98,5];  
+arr.sort();
+arr.reverse()
+document.write(arr+"<br>")
+for(i=0;i<arr.length;i++)
+document.write(arr[i]+"<br>")
+</script>
+<script>
+    let a=[3,8,9,5,6,3,4,1,89,45,12,23,45]
+    for(i=0;i<a.length;i++){
+        for(j=0;j<a.length;j++){
+            if(a[j]<a[j+1]){
+                [a[j],a[j+1]]=[a[j+1],a[j]];
+            }
+        }
+    }
+    document.write("<br> sort array: "+a)
+</script>
+<p>This example uses the HTML DOM to assign an "ondblclick" event to a p element.</p>
+<p id="demo">Double-click me.</p>
+<script>
+document.getElementById("demo").ondblclick = function  myFunction() {
+  document.getElementById("demo").innerHTML = "I was double-clicked!";
+}
+</script>
+
+</body>
+</html>
+

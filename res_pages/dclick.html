@@ -1,0 +1,20 @@
+<html>
+<body>
+    <p>This example uses the HTML DOM to assign an "ondblclick" event to a p element.</p>
+<p id="demod">Double-click me.</p>
+<script>
+function myFunction() {
+  document.getElementById("demod").innerHTML = "I was double-clicked!";
+}
+document.getElementById("demod").ondblclick = function() {myFunction()}; //call function any where
+</script>
+
+<p>This example uses the HTML DOM to assign an "ondblclick" event to a p element.</p>
+<p id="demo">Double-click me.</p>
+<script>
+document.getElementById("demo").ondblclick = function  myFunction() {
+  document.getElementById("demo").innerHTML = "I was double-clicked!";
+}
+</script>
+</body>
+</html>
